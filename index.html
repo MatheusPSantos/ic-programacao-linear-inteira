@@ -1,36 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-ng-app="IC">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/960_16_col.css">
-        <link rel="stylesheet" href="css/reset.css">
-        <title>Página Inicial | IC</title>
-    </head>
-    <body class="container_16">
-        <!-- Campo de formulário -->
-        <h2 class="page-header2">Identificação</h2>
-        <form class="form presentation-form">
-            <span class="description">Professor, para que possamos identificar a sua resposta insira seu nome abaixo.</span>
-            <p class="advice">* Obrigatório</p>
-            <p>
-            <label>
-                <p>Nome <span class="info-signal">*</span></p>
-                <p><input class="grid_10" data-ng-model="name" type="text" placeholder="Insira seu nome completo"></p>
-            </label>
-            </p>
-            <div class="clear"></div>
-            <p>
-                {{name | uppercase}}
-            </p>
-            <div class="clear"></div>
-            <p>
-                <input class="grid_6" type="button" value="continuar">
-            </p>
-        </form>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-        <script type="text/javascript">
-            angular.module('IC', []);
-        </script>
-    </body>
+<html lang="pt-br" ng-app="IC">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="css/960_16_col.css">
+</head>
+<body>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/module.js"></script>
+</body>
 </html>
